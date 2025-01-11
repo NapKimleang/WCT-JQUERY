@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Practice</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add your jQuery code here
+            $("#btnToggle").click(function() {
+                $("#content").toggle();
+            });
+
+            $("#btnChangeColor").click(function() {
+                $("#content").css("color", "blue");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Practice Page</h1>
+    <button id="btnToggle">Toggle Content</button>
+    <button id="btnChangeColor">Change Text Color</button>
+    <div id="content">This is some content to manipulate with jQuery.</div>
+</body>
+</html>
